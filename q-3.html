@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="trigle"></h1>
+    <script>
+        function trianglearea(h,l) {
+
+            let area = (l * h)/2;
+            return area;
+
+        }
+
+        let h = parseInt(prompt("Enter your width Number :-"));
+        let l = parseInt(prompt("Enter your width Number :-"));
+        let area = trianglearea(h,l);
+    
+        document.getElementById("trigle").innerHTML = "The area of a triang with height and  width " + "(" + l + " * " + h + ") /2  is :- " + area;
+
+    </script>
+</body>
+</html>

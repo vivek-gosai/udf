@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="count"></h1>
+    <script>
+        
+        function count(f) {
+
+            let total = ((f - 32)/1.8);
+            return total;
+
+        }
+
+        let f = parseInt(prompt("Enter your fahrenheit:-"));
+        let total = count(f);
+    
+        document.getElementById("count").innerHTML = "Celsius = ((" + f + " - 32 )" + " /1.8) = " + total;
+
+    </script>
+</body>
+</html>

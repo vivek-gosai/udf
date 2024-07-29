@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="count"></h1>
+    <script>
+        
+        function count(a,b) {
+
+            let total = (a*a) + (2*a*b) + (b*b);
+            return total;
+
+        }
+
+        let a = parseInt(prompt("Enter your Number a:-"));
+        let b = parseInt(prompt("Enter your Number b:-"));
+        let total = count(a,b);
+        
+        document.getElementById("count").innerHTML = "(" + a + "*" + a + ") + ( 2 * " + a + " * " + b + ") + (" + b + "*" + b + ") = "  + total;
+        
+        
+    </script>
+</body>
+</html>

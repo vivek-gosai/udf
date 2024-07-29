@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+            <p>Even Number</p>
+            <p>Odd Number</p>
+        
+            <h1 id="even"></h1>
+            <h2 id="odd" ></h2>
+       
+    <script>
+
+        function number(num) {
+
+            if (num % 2 === 0) {
+                document.getElementById("even").innerHTML = num;
+
+            } else {
+                document.getElementById("odd").innerHTML = num;
+
+            }
+
+        }
+
+        let a = parseInt(prompt("enter Your Number"));
+        number(a); 
+
+    </script>
+</body>
+
+</html>

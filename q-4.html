@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="recta"></h1>
+    <script>
+        function rectanglearea(h,l) {
+
+            let area = l * h;
+            return area;
+
+        }
+
+        let h = parseInt(prompt("Enter your width Number :-"));
+        let l = parseInt(prompt("Enter your width Number :-"));
+        let area = rectanglearea(h,l);
+        
+
+        document.getElementById("recta").innerHTML = "The area of a rectangle with height & width " + "(" + l + " * " + h + ") is area :- " + area;
+
+    </script>
+</body>
+</html>

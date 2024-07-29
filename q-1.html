@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="good-m"></h1>
+    <script>
+        
+        function greet(time) {
+            if (time === undefined) {
+                time = "Morning";
+            }
+            document.getElementById("good-m").innerHTML = "Good " + time;
+
+        }
+
+        greet(); 
+
+    </script>
+</body>
+
+</html>
